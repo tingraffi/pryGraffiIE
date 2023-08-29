@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace pryGraffiIE
 {
-    public partial class frmVentasSeguros : Form
+    public partial class frmLogo : Form
     {
-        public frmVentasSeguros()
+        public frmLogo()
         {
             InitializeComponent();
+        }
+
+        private void btnEmpezar_Click(object sender, EventArgs e)
+        {
+            frmVentasSeguros x = new frmVentasSeguros();
+            x.ShowDialog();
         }
     }
 }

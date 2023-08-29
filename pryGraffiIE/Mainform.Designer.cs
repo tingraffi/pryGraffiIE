@@ -1,6 +1,6 @@
 ﻿namespace pryGraffiIE
 {
-    partial class Mainform
+    partial class frmVentasSeguros
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,13 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.SuspendLayout();
+            // 
+            // treeView1
+            // 
+            this.treeView1.Location = new System.Drawing.Point(12, 28);
+            this.treeView1.Name = "treeView1";
+            this.treeView1.Size = new System.Drawing.Size(121, 201);
+            this.treeView1.TabIndex = 0;
+            // 
+            // frmVentasSeguros
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(399, 459);
+            this.Controls.Add(this.treeView1);
+            this.Name = "frmVentasSeguros";
+            this.Text = "Pantalla principal";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.TreeView treeView1;
     }
 }
 
