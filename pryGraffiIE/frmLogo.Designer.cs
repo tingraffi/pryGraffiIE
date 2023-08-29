@@ -49,12 +49,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            //this.BackgroundImage = global::pryGraffiIE.Properties.Resources.logo_sancor;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(375, 478);
             this.Controls.Add(this.btnEmpezar);
             this.Name = "frmLogo";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmLogo_Load);
             this.ResumeLayout(false);
 
         }

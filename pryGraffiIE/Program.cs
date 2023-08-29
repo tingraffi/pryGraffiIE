@@ -16,7 +16,7 @@ namespace pryGraffiIE
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmVentasSeguros());
+            Application.Run(new frmLogo());
         }
     }
 }

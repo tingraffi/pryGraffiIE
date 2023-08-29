@@ -22,5 +22,10 @@ namespace pryGraffiIE
             frmVentasSeguros x = new frmVentasSeguros();
             x.ShowDialog();
         }
+
+        private void frmLogo_Load(object sender, EventArgs e)
+        {
+            this.BackgroundImage = Properties.Resources.logo_sancor;
+        }
     }
 }
