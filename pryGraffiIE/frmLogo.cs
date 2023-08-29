@@ -19,6 +19,8 @@ namespace pryGraffiIE
 
         private void btnEmpezar_Click(object sender, EventArgs e)
         {
+            this.Hide();
+
             frmVentasSeguros x = new frmVentasSeguros();
             x.ShowDialog();
         }
