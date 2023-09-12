@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pryGraffiIE
 {
-    public partial class Mainform : Form
+    public partial class frmBienvenida : Form
     {
-        public Mainform()
+        public frmBienvenida()
         {
             InitializeComponent();
         }
