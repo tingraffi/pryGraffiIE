@@ -28,20 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.barraDeCarga = new System.Windows.Forms.ProgressBar();
+            this.reloj = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
+            // 
+            // barraDeCarga
+            // 
+            this.barraDeCarga.Location = new System.Drawing.Point(248, 349);
+            this.barraDeCarga.Name = "barraDeCarga";
+            this.barraDeCarga.Size = new System.Drawing.Size(307, 23);
+            this.barraDeCarga.TabIndex = 0;
+            this.barraDeCarga.Click += new System.EventHandler(this.progressBar1_Click);
+            // 
+            // reloj
+            // 
+            this.reloj.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // frmBienvenida
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::pryGraffiIE.Properties.Resources.sancor_seguros;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.barraDeCarga);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmBienvenida";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmBienvenida_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.ProgressBar barraDeCarga;
+        private System.Windows.Forms.Timer reloj;
     }
 }
