@@ -39,6 +39,7 @@
             this.lblNumero = new System.Windows.Forms.Label();
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.btnRegistrar = new System.Windows.Forms.Button();
+            this.lblMostrar = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -118,17 +119,28 @@
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
             // 
+            // lblMostrar
+            // 
+            this.lblMostrar.AutoSize = true;
+            this.lblMostrar.Location = new System.Drawing.Point(99, 59);
+            this.lblMostrar.Name = "lblMostrar";
+            this.lblMostrar.Size = new System.Drawing.Size(35, 13);
+            this.lblMostrar.TabIndex = 5;
+            this.lblMostrar.Text = "label1";
+            // 
             // frmListadoProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblMostrar);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.lblNumero);
             this.Controls.Add(this.dataGridView2);
             this.Name = "frmListadoProveedores";
             this.Text = "Listado de Proveedores";
+            this.Load += new System.EventHandler(this.frmListadoProveedores_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -148,5 +160,6 @@
         private System.Windows.Forms.Label lblNumero;
         private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.Button btnRegistrar;
+        private System.Windows.Forms.Label lblMostrar;
     }
 }
