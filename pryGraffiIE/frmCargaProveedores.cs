@@ -64,10 +64,14 @@ namespace pryGraffiIE
         {
             lblDatos.Text = "hizo doble clic";
             
-            txtEntidad.Text = dgvDatos.Rows[e.RowIndex].Cells[1].Value.ToString();
-            txtApertura.Text = dgvDatos.Rows[e.RowIndex].Cells[2].Value.ToString();
-            txtExpediente.Text =   dgvDatos.Rows[e.RowIndex].Cells[3].Value.ToString();
-            txt
+            txtEntidad.Text = dgvDatos.Rows[e.RowIndex].Cells[2].Value.ToString();
+            txtApertura.Text = dgvDatos.Rows[e.RowIndex].Cells[3].Value.ToString();
+            txtExpediente.Text =   dgvDatos.Rows[e.RowIndex].Cells[4].Value.ToString();
+            txtNumero.Text = dgvDatos.Rows[e.RowIndex].Cells[1].Value.ToString();
+            txtJuzg.Text = dgvDatos.Rows[e.RowIndex].Cells[5].Value.ToString();
+            txtJurisdiccion.Text = dgvDatos.Rows[e.RowIndex].Cells[6].Value.ToString();
+            txtDireccion.Text = dgvDatos.Rows[e.RowIndex].Cells[7].Value.ToString();
+            txtLiquidador.Text = dgvDatos.Rows[e.RowIndex].Cells[8].Value.ToString();
         }
 
         private void dgvDatos_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -91,11 +95,13 @@ namespace pryGraffiIE
             objetoEscribeArchivo = new StreamWriter(rutaArchivo, true);
 
             objetoEscribeArchivo.WriteLine(txtApertura.Text + ";" +
-                txtEntidad.Text + ";" + txtExpediente.Text);
+                txtEntidad.Text + ";" + txtExpediente.Text + ";" +
+                txtNumero.Text + ";" + txtDireccion + ";" +
+                txtJuzg + ";" + txtJurisdiccion + ";" + txtLiquidador); 
 
             objetoEscribeArchivo.Close();
 
-            MessageBox.Show("REgistro realizado");
+            MessageBox.Show("Registro realizado");
 
         }
     }

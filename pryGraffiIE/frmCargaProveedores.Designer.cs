@@ -35,6 +35,10 @@
             this.txtEntidad = new System.Windows.Forms.TextBox();
             this.txtApertura = new System.Windows.Forms.TextBox();
             this.txtJurisdiccion = new System.Windows.Forms.TextBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.txtLiquidador = new System.Windows.Forms.TextBox();
+            this.btnGrabar = new System.Windows.Forms.Button();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Entidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,9 +46,7 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtDireccion = new System.Windows.Forms.TextBox();
-            this.txtLiquidador = new System.Windows.Forms.TextBox();
-            this.btnGrabar = new System.Windows.Forms.Button();
+            this.txtNumero = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,6 +62,7 @@
             // 
             this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDatos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
             this.Entidad,
             this.Column2,
             this.Column3,
@@ -111,6 +114,35 @@
             this.txtJurisdiccion.Size = new System.Drawing.Size(100, 20);
             this.txtJurisdiccion.TabIndex = 6;
             // 
+            // txtDireccion
+            // 
+            this.txtDireccion.Location = new System.Drawing.Point(604, 137);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(100, 20);
+            this.txtDireccion.TabIndex = 7;
+            // 
+            // txtLiquidador
+            // 
+            this.txtLiquidador.Location = new System.Drawing.Point(715, 137);
+            this.txtLiquidador.Name = "txtLiquidador";
+            this.txtLiquidador.Size = new System.Drawing.Size(100, 20);
+            this.txtLiquidador.TabIndex = 8;
+            // 
+            // btnGrabar
+            // 
+            this.btnGrabar.Location = new System.Drawing.Point(725, 203);
+            this.btnGrabar.Name = "btnGrabar";
+            this.btnGrabar.Size = new System.Drawing.Size(75, 23);
+            this.btnGrabar.TabIndex = 9;
+            this.btnGrabar.Text = "grabar";
+            this.btnGrabar.UseVisualStyleBackColor = true;
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "N*";
+            this.Column1.Name = "Column1";
+            // 
             // Entidad
             // 
             this.Entidad.HeaderText = "Entidad";
@@ -146,35 +178,19 @@
             this.Column7.HeaderText = "Liquidador responsable";
             this.Column7.Name = "Column7";
             // 
-            // txtDireccion
+            // txtNumero
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(604, 137);
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(100, 20);
-            this.txtDireccion.TabIndex = 7;
-            // 
-            // txtLiquidador
-            // 
-            this.txtLiquidador.Location = new System.Drawing.Point(715, 137);
-            this.txtLiquidador.Name = "txtLiquidador";
-            this.txtLiquidador.Size = new System.Drawing.Size(100, 20);
-            this.txtLiquidador.TabIndex = 8;
-            // 
-            // btnGrabar
-            // 
-            this.btnGrabar.Location = new System.Drawing.Point(725, 203);
-            this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.Size = new System.Drawing.Size(75, 23);
-            this.btnGrabar.TabIndex = 9;
-            this.btnGrabar.Text = "grabar";
-            this.btnGrabar.UseVisualStyleBackColor = true;
-            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
+            this.txtNumero.Location = new System.Drawing.Point(74, 96);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(100, 20);
+            this.txtNumero.TabIndex = 10;
             // 
             // frmCargaProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(890, 506);
+            this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.txtLiquidador);
             this.Controls.Add(this.txtDireccion);
@@ -198,13 +214,6 @@
 
         private System.Windows.Forms.Label lblDatos;
         private System.Windows.Forms.DataGridView dgvDatos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Entidad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.TextBox txtJuzg;
         private System.Windows.Forms.TextBox txtExpediente;
         private System.Windows.Forms.TextBox txtEntidad;
@@ -213,5 +222,14 @@
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.TextBox txtLiquidador;
         private System.Windows.Forms.Button btnGrabar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Entidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.TextBox txtNumero;
     }
 }
