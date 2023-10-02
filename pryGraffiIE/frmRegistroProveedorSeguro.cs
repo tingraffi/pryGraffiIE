@@ -16,5 +16,10 @@ namespace pryGraffiIE
         {
             InitializeComponent();
         }
+
+        private void frmRegistroProveedorSeguro_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
