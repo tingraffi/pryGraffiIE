@@ -104,5 +104,10 @@ namespace pryGraffiIE
             MessageBox.Show("Registro realizado");
 
         }
+
+        private void lblDatos_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

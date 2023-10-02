@@ -30,14 +30,6 @@
         {
             this.lblDatos = new System.Windows.Forms.Label();
             this.dgvDatos = new System.Windows.Forms.DataGridView();
-            this.txtJuzg = new System.Windows.Forms.TextBox();
-            this.txtExpediente = new System.Windows.Forms.TextBox();
-            this.txtEntidad = new System.Windows.Forms.TextBox();
-            this.txtApertura = new System.Windows.Forms.TextBox();
-            this.txtJurisdiccion = new System.Windows.Forms.TextBox();
-            this.txtDireccion = new System.Windows.Forms.TextBox();
-            this.txtLiquidador = new System.Windows.Forms.TextBox();
-            this.btnGrabar = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Entidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,6 +38,14 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtJuzg = new System.Windows.Forms.TextBox();
+            this.txtExpediente = new System.Windows.Forms.TextBox();
+            this.txtEntidad = new System.Windows.Forms.TextBox();
+            this.txtApertura = new System.Windows.Forms.TextBox();
+            this.txtJurisdiccion = new System.Windows.Forms.TextBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.txtLiquidador = new System.Windows.Forms.TextBox();
+            this.btnGrabar = new System.Windows.Forms.Button();
             this.txtNumero = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
@@ -54,9 +54,10 @@
             // 
             this.lblDatos.Location = new System.Drawing.Point(12, 9);
             this.lblDatos.Name = "lblDatos";
-            this.lblDatos.Size = new System.Drawing.Size(453, 234);
+            this.lblDatos.Size = new System.Drawing.Size(434, 125);
             this.lblDatos.TabIndex = 0;
             this.lblDatos.Text = "label1";
+            this.lblDatos.Click += new System.EventHandler(this.lblDatos_Click);
             // 
             // dgvDatos
             // 
@@ -70,73 +71,13 @@
             this.Column5,
             this.Column6,
             this.Column7});
-            this.dgvDatos.Location = new System.Drawing.Point(74, 258);
+            this.dgvDatos.Location = new System.Drawing.Point(28, 197);
             this.dgvDatos.Name = "dgvDatos";
             this.dgvDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDatos.Size = new System.Drawing.Size(741, 200);
+            this.dgvDatos.Size = new System.Drawing.Size(842, 200);
             this.dgvDatos.TabIndex = 1;
             this.dgvDatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDatos_CellContentClick);
             this.dgvDatos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDatos_CellDoubleClick);
-            // 
-            // txtJuzg
-            // 
-            this.txtJuzg.Location = new System.Drawing.Point(392, 137);
-            this.txtJuzg.Name = "txtJuzg";
-            this.txtJuzg.Size = new System.Drawing.Size(100, 20);
-            this.txtJuzg.TabIndex = 2;
-            // 
-            // txtExpediente
-            // 
-            this.txtExpediente.Location = new System.Drawing.Point(286, 137);
-            this.txtExpediente.Name = "txtExpediente";
-            this.txtExpediente.Size = new System.Drawing.Size(100, 20);
-            this.txtExpediente.TabIndex = 3;
-            // 
-            // txtEntidad
-            // 
-            this.txtEntidad.Location = new System.Drawing.Point(74, 137);
-            this.txtEntidad.Name = "txtEntidad";
-            this.txtEntidad.Size = new System.Drawing.Size(100, 20);
-            this.txtEntidad.TabIndex = 4;
-            this.txtEntidad.TextChanged += new System.EventHandler(this.txtEntidad_TextChanged);
-            // 
-            // txtApertura
-            // 
-            this.txtApertura.Location = new System.Drawing.Point(180, 137);
-            this.txtApertura.Name = "txtApertura";
-            this.txtApertura.Size = new System.Drawing.Size(100, 20);
-            this.txtApertura.TabIndex = 5;
-            // 
-            // txtJurisdiccion
-            // 
-            this.txtJurisdiccion.Location = new System.Drawing.Point(498, 137);
-            this.txtJurisdiccion.Name = "txtJurisdiccion";
-            this.txtJurisdiccion.Size = new System.Drawing.Size(100, 20);
-            this.txtJurisdiccion.TabIndex = 6;
-            // 
-            // txtDireccion
-            // 
-            this.txtDireccion.Location = new System.Drawing.Point(604, 137);
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(100, 20);
-            this.txtDireccion.TabIndex = 7;
-            // 
-            // txtLiquidador
-            // 
-            this.txtLiquidador.Location = new System.Drawing.Point(715, 137);
-            this.txtLiquidador.Name = "txtLiquidador";
-            this.txtLiquidador.Size = new System.Drawing.Size(100, 20);
-            this.txtLiquidador.TabIndex = 8;
-            // 
-            // btnGrabar
-            // 
-            this.btnGrabar.Location = new System.Drawing.Point(725, 203);
-            this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.Size = new System.Drawing.Size(75, 23);
-            this.btnGrabar.TabIndex = 9;
-            this.btnGrabar.Text = "grabar";
-            this.btnGrabar.UseVisualStyleBackColor = true;
-            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
             // Column1
             // 
@@ -178,9 +119,69 @@
             this.Column7.HeaderText = "Liquidador responsable";
             this.Column7.Name = "Column7";
             // 
+            // txtJuzg
+            // 
+            this.txtJuzg.Location = new System.Drawing.Point(452, 137);
+            this.txtJuzg.Name = "txtJuzg";
+            this.txtJuzg.Size = new System.Drawing.Size(100, 20);
+            this.txtJuzg.TabIndex = 2;
+            // 
+            // txtExpediente
+            // 
+            this.txtExpediente.Location = new System.Drawing.Point(346, 137);
+            this.txtExpediente.Name = "txtExpediente";
+            this.txtExpediente.Size = new System.Drawing.Size(100, 20);
+            this.txtExpediente.TabIndex = 3;
+            // 
+            // txtEntidad
+            // 
+            this.txtEntidad.Location = new System.Drawing.Point(134, 137);
+            this.txtEntidad.Name = "txtEntidad";
+            this.txtEntidad.Size = new System.Drawing.Size(100, 20);
+            this.txtEntidad.TabIndex = 4;
+            this.txtEntidad.TextChanged += new System.EventHandler(this.txtEntidad_TextChanged);
+            // 
+            // txtApertura
+            // 
+            this.txtApertura.Location = new System.Drawing.Point(240, 137);
+            this.txtApertura.Name = "txtApertura";
+            this.txtApertura.Size = new System.Drawing.Size(100, 20);
+            this.txtApertura.TabIndex = 5;
+            // 
+            // txtJurisdiccion
+            // 
+            this.txtJurisdiccion.Location = new System.Drawing.Point(558, 137);
+            this.txtJurisdiccion.Name = "txtJurisdiccion";
+            this.txtJurisdiccion.Size = new System.Drawing.Size(100, 20);
+            this.txtJurisdiccion.TabIndex = 6;
+            // 
+            // txtDireccion
+            // 
+            this.txtDireccion.Location = new System.Drawing.Point(664, 137);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(100, 20);
+            this.txtDireccion.TabIndex = 7;
+            // 
+            // txtLiquidador
+            // 
+            this.txtLiquidador.Location = new System.Drawing.Point(770, 137);
+            this.txtLiquidador.Name = "txtLiquidador";
+            this.txtLiquidador.Size = new System.Drawing.Size(100, 20);
+            this.txtLiquidador.TabIndex = 8;
+            // 
+            // btnGrabar
+            // 
+            this.btnGrabar.Location = new System.Drawing.Point(740, 464);
+            this.btnGrabar.Name = "btnGrabar";
+            this.btnGrabar.Size = new System.Drawing.Size(75, 23);
+            this.btnGrabar.TabIndex = 9;
+            this.btnGrabar.Text = "grabar";
+            this.btnGrabar.UseVisualStyleBackColor = true;
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
+            // 
             // txtNumero
             // 
-            this.txtNumero.Location = new System.Drawing.Point(74, 96);
+            this.txtNumero.Location = new System.Drawing.Point(28, 137);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(100, 20);
             this.txtNumero.TabIndex = 10;

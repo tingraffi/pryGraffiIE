@@ -16,5 +16,11 @@ namespace pryGraffiIE
         {
             InitializeComponent();
         }
+
+        private void registroDeProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCargaProveedores frmCargaProveedores = new frmCargaProveedores();
+            frmCargaProveedores.ShowDialog();
+        }
     }
 }
