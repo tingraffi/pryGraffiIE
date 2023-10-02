@@ -22,5 +22,11 @@ namespace pryGraffiIE
             frmCargaProveedores frmCargaProveedores = new frmCargaProveedores();
             frmCargaProveedores.ShowDialog();
         }
+
+        private void verListaDePreciosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRegistroProveedorSeguro frmRegistroProveedorSeguro = new frmRegistroProveedorSeguro();
+            frmRegistroProveedorSeguro.ShowDialog();
+        }
     }
 }

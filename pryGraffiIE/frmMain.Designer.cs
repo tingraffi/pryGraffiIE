@@ -68,6 +68,7 @@
             this.verListaDePreciosToolStripMenuItem.Name = "verListaDePreciosToolStripMenuItem";
             this.verListaDePreciosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.verListaDePreciosToolStripMenuItem.Text = "Ver lista de precios";
+            this.verListaDePreciosToolStripMenuItem.Click += new System.EventHandler(this.verListaDePreciosToolStripMenuItem_Click);
             // 
             // registroDeProveedoresToolStripMenuItem
             // 
