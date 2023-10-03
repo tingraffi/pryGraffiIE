@@ -28,6 +28,8 @@ namespace pryGraffiIE
         private void frmRegistroProveedorSeguro_Load(object sender, EventArgs e)
         {
 
+           
+
         }
 
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)

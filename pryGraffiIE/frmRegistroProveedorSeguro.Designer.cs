@@ -45,9 +45,9 @@
             // 
             // btnNivel2
             // 
-            this.btnNivel2.Location = new System.Drawing.Point(12, 46);
+            this.btnNivel2.Location = new System.Drawing.Point(205, 17);
             this.btnNivel2.Name = "btnNivel2";
-            this.btnNivel2.Size = new System.Drawing.Size(174, 23);
+            this.btnNivel2.Size = new System.Drawing.Size(178, 55);
             this.btnNivel2.TabIndex = 7;
             this.btnNivel2.Text = "Nivel 2 tree";
             this.btnNivel2.UseVisualStyleBackColor = true;
@@ -56,7 +56,7 @@
             // 
             this.btnTreeNivel1.Location = new System.Drawing.Point(12, 17);
             this.btnTreeNivel1.Name = "btnTreeNivel1";
-            this.btnTreeNivel1.Size = new System.Drawing.Size(174, 23);
+            this.btnTreeNivel1.Size = new System.Drawing.Size(174, 55);
             this.btnTreeNivel1.TabIndex = 6;
             this.btnTreeNivel1.Text = "Nivel 1 tree";
             this.btnTreeNivel1.UseVisualStyleBackColor = true;
