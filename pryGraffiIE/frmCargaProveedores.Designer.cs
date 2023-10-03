@@ -60,11 +60,11 @@
             // 
             // lblDatos
             // 
+            this.lblDatos.BackColor = System.Drawing.Color.DeepPink;
             this.lblDatos.Location = new System.Drawing.Point(25, 9);
             this.lblDatos.Name = "lblDatos";
             this.lblDatos.Size = new System.Drawing.Size(434, 96);
             this.lblDatos.TabIndex = 0;
-            this.lblDatos.Text = "label1";
             this.lblDatos.Click += new System.EventHandler(this.lblDatos_Click);
             // 
             // dgvDatos
@@ -271,6 +271,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DeepPink;
             this.ClientSize = new System.Drawing.Size(890, 506);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);

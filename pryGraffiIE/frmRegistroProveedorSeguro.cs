@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Xml.Linq;
+
+
 
 namespace pryGraffiIE
 {
@@ -18,6 +22,11 @@ namespace pryGraffiIE
         }
 
         private void frmRegistroProveedorSeguro_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
 
         }
