@@ -126,5 +126,10 @@ namespace pryGraffiIE
         {
 
         }
+
+        private void Limpiar_Click(object sender, EventArgs e)
+        {
+            dgvDatos.Rows.Clear();
+        }
     }
 }

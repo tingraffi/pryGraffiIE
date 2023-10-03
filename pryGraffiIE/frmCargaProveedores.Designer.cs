@@ -59,6 +59,7 @@
             this.cmbLiquidador = new System.Windows.Forms.ComboBox();
             this.txtJuzg = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.Limpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -785,12 +786,23 @@
             this.label9.TabIndex = 22;
             this.label9.Text = "Doble click en la grilla para mostrar";
             // 
+            // Limpiar
+            // 
+            this.Limpiar.Location = new System.Drawing.Point(664, 464);
+            this.Limpiar.Name = "Limpiar";
+            this.Limpiar.Size = new System.Drawing.Size(75, 23);
+            this.Limpiar.TabIndex = 24;
+            this.Limpiar.Text = "Limpiar";
+            this.Limpiar.UseVisualStyleBackColor = true;
+            this.Limpiar.Click += new System.EventHandler(this.Limpiar_Click);
+            // 
             // frmCargaProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DeepPink;
             this.ClientSize = new System.Drawing.Size(890, 506);
+            this.Controls.Add(this.Limpiar);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.cmbLiquidador);
             this.Controls.Add(this.cmbJurisdiccion);
@@ -856,5 +868,6 @@
         private System.Windows.Forms.ComboBox cmbLiquidador;
         private System.Windows.Forms.TextBox txtJuzg;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button Limpiar;
     }
 }
