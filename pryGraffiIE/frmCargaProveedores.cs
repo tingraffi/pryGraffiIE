@@ -39,6 +39,10 @@ namespace pryGraffiIE
 
         private void frmCargaProveedores_Load(object sender, EventArgs e)
         {
+
+            try
+            {
+
             DirectoryInfo informacionCarpetas = new DirectoryInfo(@"..\..");
 
             rutaArchivo = informacionCarpetas.FullName;
@@ -58,20 +62,28 @@ namespace pryGraffiIE
             }
 
             objetoLectorArchivo.Close();
+            }
+           
+            catch(Exception ex)
+            {
+                MessageBox.Show("Te equivocaste" + ex.Message);
+            }
+
+
         }
 
         private void dgvDatos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             lblDatos.Text = "hizo doble clic";
             
-            txtEntidad.Text = dgvDatos.Rows[e.RowIndex].Cells[2].Value.ToString();
-            txtApertura.Text = dgvDatos.Rows[e.RowIndex].Cells[3].Value.ToString();
-            txtExpediente.Text =   dgvDatos.Rows[e.RowIndex].Cells[4].Value.ToString();
-            txtNumero.Text = dgvDatos.Rows[e.RowIndex].Cells[1].Value.ToString();
-            txtJuzg.Text = dgvDatos.Rows[e.RowIndex].Cells[5].Value.ToString();
-            txtJurisdiccion.Text = dgvDatos.Rows[e.RowIndex].Cells[6].Value.ToString();
-            txtDireccion.Text = dgvDatos.Rows[e.RowIndex].Cells[7].Value.ToString();
-            txtLiquidador.Text = dgvDatos.Rows[e.RowIndex].Cells[8].Value.ToString();
+            txtEntidad.Text = dgvDatos.Rows[e.RowIndex].Cells[1].Value.ToString();
+            txtApertura.Text = dgvDatos.Rows[e.RowIndex].Cells[2].Value.ToString();
+            txtExpediente.Text =   dgvDatos.Rows[e.RowIndex].Cells[3].Value.ToString();
+            txtNumero.Text = dgvDatos.Rows[e.RowIndex].Cells[0].Value.ToString();
+            cmbJuzg.Text = dgvDatos.Rows[e.RowIndex].Cells[4].Value.ToString();
+            cmbJurisdiccion.Text = dgvDatos.Rows[e.RowIndex].Cells[5].Value.ToString();
+            txtDireccion.Text = dgvDatos.Rows[e.RowIndex].Cells[6].Value.ToString();
+            cmbLiquidador.Text = dgvDatos.Rows[e.RowIndex].Cells[7].Value.ToString();
         }
 
         private void dgvDatos_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -96,12 +108,12 @@ namespace pryGraffiIE
 
             objetoEscribeArchivo.WriteLine(txtApertura.Text + ";" +
                 txtEntidad.Text + ";" + txtExpediente.Text + ";" +
-                txtNumero.Text + ";" + txtDireccion + ";" +
-                txtJuzg + ";" + txtJurisdiccion + ";" + txtLiquidador); 
+                txtNumero.Text + ";" + txtDireccion.Text + ";" +
+                txtJuzg.Text + ";" + txtJurisdiccion.Text + ";" + txtLiquidador.Text); 
 
             objetoEscribeArchivo.Close();
 
-            MessageBox.Show("Registro realizado");
+            MessageBox.Show("Se registró correctamente");
 
         }
 
