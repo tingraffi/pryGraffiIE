@@ -109,7 +109,7 @@ namespace pryGraffiIE
             objetoEscribeArchivo.WriteLine(txtApertura.Text + ";" +
                 txtEntidad.Text + ";" + txtExpediente.Text + ";" +
                 txtNumero.Text + ";" + txtDireccion.Text + ";" +
-                txtJuzg.Text + ";" + txtJurisdiccion.Text + ";" + txtLiquidador.Text); 
+                cmbJuzg.Text + ";" + cmbJurisdiccion.Text + ";" + cmbLiquidador.Text); 
 
             objetoEscribeArchivo.Close();
 
