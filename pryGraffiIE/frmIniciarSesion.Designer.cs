@@ -100,6 +100,7 @@
             this.btnTraer.TabIndex = 6;
             this.btnTraer.Text = "Traer informaciòn de USERS";
             this.btnTraer.UseVisualStyleBackColor = true;
+            this.btnTraer.Click += new System.EventHandler(this.btnTraer_Click);
             // 
             // btnConectar
             // 
@@ -125,7 +126,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DeepPink;
-            this.ClientSize = new System.Drawing.Size(463, 295);
+            this.ClientSize = new System.Drawing.Size(293, 278);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cboUsers);
