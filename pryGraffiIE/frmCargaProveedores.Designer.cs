@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCargaProveedores));
             this.lblDatos = new System.Windows.Forms.Label();
             this.dgvDatos = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -826,6 +827,7 @@
             this.Controls.Add(this.txtJuzg);
             this.Controls.Add(this.dgvDatos);
             this.Controls.Add(this.lblDatos);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCargaProveedores";
             this.Text = "Carga de Proveedores";
             this.Load += new System.EventHandler(this.frmCargaProveedores_Load);
