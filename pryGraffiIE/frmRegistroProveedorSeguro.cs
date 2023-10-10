@@ -48,8 +48,7 @@ namespace pryGraffiIE
                     TreeNode node = new TreeNode(Path.GetFileName(subDirectorio));
                     nodoRaiz.Nodes.Add(node);
 
-                    //recursiva- se llama a si mismo para ver si hay màs carpetas
-                    //buscar sub carpetas
+                    
                     TraerSubCarpetas(subDirectorio, node);
                     TraerArchivos(subDirectorio, node);
                 }
@@ -128,10 +127,15 @@ namespace pryGraffiIE
 
         private void btnTreeNivel1_Click_1(object sender, EventArgs e)
         {
-            //una direcciòn estàtica de carpeta
+            
             DirectoryInfo info = new DirectoryInfo("C:\\Users\\Alumnos\\source\\repos\\pryCasaleIE\\pryCasaleIE");
 
             CargarTreeView(info.FullName, info.Name);
+        }
+
+        private void treeView1_AfterSelect_1(object sender, TreeViewEventArgs e)
+        {
+
         }
     }
     }

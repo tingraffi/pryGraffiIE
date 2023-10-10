@@ -14,7 +14,7 @@ namespace pryGraffiIE
 {
     public partial class frmCargaProveedores : Form
     {
-        //declaraciòn de variables globales
+        
         StreamReader objetoLectorArchivo;
         StreamWriter objetoEscribeArchivo;
         string rutaArchivo;
@@ -57,7 +57,7 @@ namespace pryGraffiIE
 
                 separadorTexto = leerLinea.Split(';');
 
-                //lblDatos.Text+=objetoLectorArchivo.ReadLine();
+                
                 dgvDatos.Rows.Add(separadorTexto);
             }
 
@@ -114,6 +114,16 @@ namespace pryGraffiIE
             objetoEscribeArchivo.Close();
 
             MessageBox.Show("Se registró correctamente");
+            txtNumero.Clear();
+            txtEntidad.Clear();
+            txtApertura.Clear();
+            txtExpediente.Clear();
+            cmbJuzg.DataSource = null;
+            cmbJuzg.Items.Clear();
+            cmbJurisdiccion.DataSource = null;
+            cmbJurisdiccion.Items.Clear();
+            cmbLiquidador.DataSource = null;
+            cmbLiquidador.Items.Clear();
 
         }
 
