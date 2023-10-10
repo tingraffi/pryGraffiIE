@@ -30,7 +30,7 @@ namespace pryGraffiIE
 
             if (Directory.Exists(rutaCarpetaRaiz))
             {
-                TreeNode nodoRaiz = new TreeNode(nombreCarpeta);
+                TreeNode nodoRaiz = new TreeNode("Proveedores");
                 treeView1.Nodes.Add(nodoRaiz);
                 TraerSubCarpetas(rutaCarpetaRaiz, nodoRaiz);
                 TraerArchivos(rutaCarpetaRaiz, nodoRaiz);
@@ -95,7 +95,7 @@ namespace pryGraffiIE
             {
                 DirectoryInfo info = new DirectoryInfo(@"../..");
 
-                string rutaArchivo = info.FullName + "\\" + e.Node.Text;
+                string rutaArchivo = info.FullName + "\\" + e.Node.FullPath;
 
                 StreamReader lectorArchivos = new StreamReader(rutaArchivo);
 
@@ -118,9 +118,9 @@ namespace pryGraffiIE
 
         private void btnNivel2_Click_1(object sender, EventArgs e)
         {
-            DirectoryInfo info = new DirectoryInfo(@"../../");
+            DirectoryInfo info = new DirectoryInfo(@"../..");
 
-            string ruta = info.FullName + "Proveedores";
+            string ruta = info.FullName + "\\Proveedores";
 
             CargarTreeView(ruta, info.Name);
         }
@@ -128,7 +128,7 @@ namespace pryGraffiIE
         private void btnTreeNivel1_Click_1(object sender, EventArgs e)
         {
             
-            DirectoryInfo info = new DirectoryInfo("C:\\Users\\Alumnos\\source\\repos\\pryCasaleIE\\pryCasaleIE");
+            DirectoryInfo info = new DirectoryInfo(@"../..");
 
             CargarTreeView(info.FullName, info.Name);
         }
