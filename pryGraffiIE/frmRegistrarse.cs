@@ -32,7 +32,7 @@ namespace pryGraffiIE
             if (txtContraseña.Text == txtContraseña2.Text)
             {
                 objAcceso.RegistroUsuarios(txtUsuario.Text, txtContraseña.Text);
-                MessageBox.Show("Usuario registrado exitosamente");
+                MessageBox.Show("Su usuario se ha registrado correctamente");
                 this.Close();
             }
             else

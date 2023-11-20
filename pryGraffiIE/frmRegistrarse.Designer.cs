@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegistrarse));
             this.txtContraseña2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtContraseña = new System.Windows.Forms.TextBox();
@@ -39,7 +40,7 @@
             // 
             // txtContraseña2
             // 
-            this.txtContraseña2.Location = new System.Drawing.Point(420, 238);
+            this.txtContraseña2.Location = new System.Drawing.Point(203, 170);
             this.txtContraseña2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtContraseña2.Name = "txtContraseña2";
             this.txtContraseña2.Size = new System.Drawing.Size(151, 22);
@@ -50,7 +51,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(244, 238);
+            this.label1.Location = new System.Drawing.Point(27, 170);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 20);
             this.label1.TabIndex = 19;
@@ -59,7 +60,7 @@
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(420, 150);
+            this.txtContraseña.Location = new System.Drawing.Point(203, 82);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(151, 22);
@@ -68,7 +69,7 @@
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(420, 75);
+            this.txtUsuario.Location = new System.Drawing.Point(203, 7);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(151, 22);
@@ -79,7 +80,7 @@
             // 
             this.lblContraseña.AutoSize = true;
             this.lblContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContraseña.Location = new System.Drawing.Point(244, 156);
+            this.lblContraseña.Location = new System.Drawing.Point(27, 88);
             this.lblContraseña.Name = "lblContraseña";
             this.lblContraseña.Size = new System.Drawing.Size(100, 20);
             this.lblContraseña.TabIndex = 16;
@@ -90,7 +91,7 @@
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(229, 77);
+            this.lblUsuario.Location = new System.Drawing.Point(12, 9);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(162, 22);
             this.lblUsuario.TabIndex = 15;
@@ -100,9 +101,9 @@
             // btnRegistrarse
             // 
             this.btnRegistrarse.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnRegistrarse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarse.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrarse.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnRegistrarse.Location = new System.Drawing.Point(344, 332);
+            this.btnRegistrarse.Location = new System.Drawing.Point(127, 264);
             this.btnRegistrarse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRegistrarse.Name = "btnRegistrarse";
             this.btnRegistrarse.Size = new System.Drawing.Size(153, 43);
@@ -115,7 +116,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.HotPink;
+            this.ClientSize = new System.Drawing.Size(389, 330);
             this.Controls.Add(this.txtContraseña2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtContraseña);
@@ -123,8 +125,9 @@
             this.Controls.Add(this.lblContraseña);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.btnRegistrarse);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmRegistrarse";
-            this.Text = "frmRegistrarse";
+            this.Text = "Registrarse";
             this.Load += new System.EventHandler(this.frmRegistrarse_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -26,7 +26,7 @@ namespace pryGraffiIE
         {
             if (objAcceso.ValidarUsuarios(txtNombreUsuario.Text, txtContraseña.Text) == true)
             {
-                frmMain fb = new frmMain();
+                frmBienvenida fb = new frmBienvenida();
                 fb.ShowDialog();
                 frmInicioSesion fin = new frmInicioSesion();
                 fin.Close();
@@ -34,14 +34,14 @@ namespace pryGraffiIE
             }
             else
             {
-                MessageBox.Show("Usuario o contraseña incorrectos");
+                MessageBox.Show("El usuario o la contraseña ingresada es incorrecta");
                 txtNombreUsuario.Text = "";
                 txtContraseña.Text = "";
                 IntentosFallidos++;
                 if (IntentosFallidos >= 3)
                 {
                     btnIniciarSesion.Enabled = false;
-                    MessageBox.Show("Alcanzo los intentos maximos de incio de sesion");
+                    MessageBox.Show("Alcanzó el límite máximo de intentos");
                 }
             }
         }

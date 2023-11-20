@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicioSesion));
             this.btnRegistrarse = new System.Windows.Forms.Button();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.txtNombreUsuario = new System.Windows.Forms.TextBox();
@@ -40,12 +41,12 @@
             // 
             this.btnRegistrarse.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnRegistrarse.CausesValidation = false;
-            this.btnRegistrarse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarse.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrarse.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnRegistrarse.Location = new System.Drawing.Point(382, 303);
+            this.btnRegistrarse.Location = new System.Drawing.Point(98, 172);
             this.btnRegistrarse.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegistrarse.Name = "btnRegistrarse";
-            this.btnRegistrarse.Size = new System.Drawing.Size(256, 57);
+            this.btnRegistrarse.Size = new System.Drawing.Size(231, 33);
             this.btnRegistrarse.TabIndex = 16;
             this.btnRegistrarse.Text = "Registrarse";
             this.btnRegistrarse.UseVisualStyleBackColor = false;
@@ -53,7 +54,7 @@
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(382, 146);
+            this.txtContraseña.Location = new System.Drawing.Point(232, 61);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(4);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(255, 22);
@@ -62,7 +63,7 @@
             // 
             // txtNombreUsuario
             // 
-            this.txtNombreUsuario.Location = new System.Drawing.Point(382, 90);
+            this.txtNombreUsuario.Location = new System.Drawing.Point(232, 5);
             this.txtNombreUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombreUsuario.Name = "txtNombreUsuario";
             this.txtNombreUsuario.Size = new System.Drawing.Size(255, 22);
@@ -73,7 +74,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(163, 149);
+            this.label2.Location = new System.Drawing.Point(13, 64);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 20);
@@ -85,7 +86,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(163, 94);
+            this.label1.Location = new System.Drawing.Point(13, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(156, 20);
@@ -96,12 +97,12 @@
             // btnIniciarSesion
             // 
             this.btnIniciarSesion.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnIniciarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIniciarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIniciarSesion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnIniciarSesion.Location = new System.Drawing.Point(382, 229);
+            this.btnIniciarSesion.Location = new System.Drawing.Point(98, 112);
             this.btnIniciarSesion.Margin = new System.Windows.Forms.Padding(4);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
-            this.btnIniciarSesion.Size = new System.Drawing.Size(256, 52);
+            this.btnIniciarSesion.Size = new System.Drawing.Size(231, 33);
             this.btnIniciarSesion.TabIndex = 11;
             this.btnIniciarSesion.Text = "Iniciar Sesion";
             this.btnIniciarSesion.UseVisualStyleBackColor = false;
@@ -111,15 +112,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.HotPink;
+            this.ClientSize = new System.Drawing.Size(493, 219);
             this.Controls.Add(this.btnRegistrarse);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtNombreUsuario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnIniciarSesion);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmInicioSesion";
-            this.Text = "frmInicioSesion";
+            this.Text = "Iniciar Sesión";
             this.Load += new System.EventHandler(this.frmInicioSesion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
