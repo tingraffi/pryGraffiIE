@@ -14,7 +14,7 @@
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -49,7 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clsAccesoBase.cs" />
+    <Compile Include="clsBasedeDatos.cs" />
     <Compile Include="frmBienvenida.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,17 +62,23 @@
     <Compile Include="frmCargaProveedores.Designer.cs">
       <DependentUpon>frmCargaProveedores.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmIniciarSesion.cs">
+    <Compile Include="frmInicioSesion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmIniciarSesion.Designer.cs">
-      <DependentUpon>frmIniciarSesion.cs</DependentUpon>
+    <Compile Include="frmInicioSesion.Designer.cs">
+      <DependentUpon>frmInicioSesion.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarse.Designer.cs">
+      <DependentUpon>frmRegistrarse.cs</DependentUpon>
     </Compile>
     <Compile Include="frmRegistroProveedorSeguro.cs">
       <SubType>Form</SubType>
@@ -88,11 +94,14 @@
     <EmbeddedResource Include="frmCargaProveedores.resx">
       <DependentUpon>frmCargaProveedores.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmIniciarSesion.resx">
-      <DependentUpon>frmIniciarSesion.cs</DependentUpon>
+    <EmbeddedResource Include="frmInicioSesion.resx">
+      <DependentUpon>frmInicioSesion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarse.resx">
+      <DependentUpon>frmRegistrarse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegistroProveedorSeguro.resx">
       <DependentUpon>frmRegistroProveedorSeguro.cs</DependentUpon>
