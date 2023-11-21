@@ -829,6 +829,7 @@
             this.Controls.Add(this.lblDatos);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCargaProveedores";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Carga de Proveedores";
             this.Load += new System.EventHandler(this.frmCargaProveedores_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();

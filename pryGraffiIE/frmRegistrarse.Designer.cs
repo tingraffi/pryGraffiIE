@@ -41,7 +41,7 @@
             // txtContraseña2
             // 
             this.txtContraseña2.Location = new System.Drawing.Point(152, 68);
-            this.txtContraseña2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtContraseña2.Margin = new System.Windows.Forms.Padding(2);
             this.txtContraseña2.Name = "txtContraseña2";
             this.txtContraseña2.Size = new System.Drawing.Size(114, 20);
             this.txtContraseña2.TabIndex = 20;
@@ -62,7 +62,7 @@
             // txtContraseña
             // 
             this.txtContraseña.Location = new System.Drawing.Point(152, 39);
-            this.txtContraseña.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtContraseña.Margin = new System.Windows.Forms.Padding(2);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(114, 20);
             this.txtContraseña.TabIndex = 18;
@@ -71,7 +71,7 @@
             // txtUsuario
             // 
             this.txtUsuario.Location = new System.Drawing.Point(152, 6);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(114, 20);
             this.txtUsuario.TabIndex = 17;
@@ -107,7 +107,7 @@
             this.btnRegistrarse.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrarse.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnRegistrarse.Location = new System.Drawing.Point(76, 101);
-            this.btnRegistrarse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegistrarse.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegistrarse.Name = "btnRegistrarse";
             this.btnRegistrarse.Size = new System.Drawing.Size(127, 23);
             this.btnRegistrarse.TabIndex = 14;
@@ -129,8 +129,9 @@
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.btnRegistrarse);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmRegistrarse";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registrarse";
             this.Load += new System.EventHandler(this.frmRegistrarse_Load);
             this.ResumeLayout(false);
