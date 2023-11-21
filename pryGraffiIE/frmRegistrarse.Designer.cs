@@ -40,10 +40,10 @@
             // 
             // txtContraseña2
             // 
-            this.txtContraseña2.Location = new System.Drawing.Point(203, 170);
-            this.txtContraseña2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtContraseña2.Location = new System.Drawing.Point(152, 68);
+            this.txtContraseña2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtContraseña2.Name = "txtContraseña2";
-            this.txtContraseña2.Size = new System.Drawing.Size(151, 22);
+            this.txtContraseña2.Size = new System.Drawing.Size(114, 20);
             this.txtContraseña2.TabIndex = 20;
             this.txtContraseña2.TextChanged += new System.EventHandler(this.txtContraseña2_TextChanged);
             // 
@@ -51,28 +51,29 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(27, 170);
+            this.label1.Location = new System.Drawing.Point(11, 68);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 20);
+            this.label1.Size = new System.Drawing.Size(124, 16);
             this.label1.TabIndex = 19;
-            this.label1.Text = "Contraseña:";
+            this.label1.Text = "Repetir contraseña:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(203, 82);
-            this.txtContraseña.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtContraseña.Location = new System.Drawing.Point(152, 39);
+            this.txtContraseña.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(151, 22);
+            this.txtContraseña.Size = new System.Drawing.Size(114, 20);
             this.txtContraseña.TabIndex = 18;
             this.txtContraseña.TextChanged += new System.EventHandler(this.txtContraseña_TextChanged);
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(203, 7);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtUsuario.Location = new System.Drawing.Point(152, 6);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(151, 22);
+            this.txtUsuario.Size = new System.Drawing.Size(114, 20);
             this.txtUsuario.TabIndex = 17;
             this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             // 
@@ -80,9 +81,10 @@
             // 
             this.lblContraseña.AutoSize = true;
             this.lblContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContraseña.Location = new System.Drawing.Point(27, 88);
+            this.lblContraseña.Location = new System.Drawing.Point(11, 39);
+            this.lblContraseña.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(100, 20);
+            this.lblContraseña.Size = new System.Drawing.Size(79, 16);
             this.lblContraseña.TabIndex = 16;
             this.lblContraseña.Text = "Contraseña:";
             this.lblContraseña.Click += new System.EventHandler(this.lblContraseña_Click);
@@ -91,9 +93,10 @@
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(12, 9);
+            this.lblUsuario.Location = new System.Drawing.Point(9, 7);
+            this.lblUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(162, 22);
+            this.lblUsuario.Size = new System.Drawing.Size(125, 16);
             this.lblUsuario.TabIndex = 15;
             this.lblUsuario.Text = "Nombre de usuario:";
             this.lblUsuario.Click += new System.EventHandler(this.lblUsuario_Click);
@@ -103,10 +106,10 @@
             this.btnRegistrarse.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnRegistrarse.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrarse.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnRegistrarse.Location = new System.Drawing.Point(127, 264);
-            this.btnRegistrarse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRegistrarse.Location = new System.Drawing.Point(76, 101);
+            this.btnRegistrarse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRegistrarse.Name = "btnRegistrarse";
-            this.btnRegistrarse.Size = new System.Drawing.Size(153, 43);
+            this.btnRegistrarse.Size = new System.Drawing.Size(127, 23);
             this.btnRegistrarse.TabIndex = 14;
             this.btnRegistrarse.Text = "Registrarse";
             this.btnRegistrarse.UseVisualStyleBackColor = false;
@@ -114,10 +117,10 @@
             // 
             // frmRegistrarse
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.HotPink;
-            this.ClientSize = new System.Drawing.Size(389, 330);
+            this.ClientSize = new System.Drawing.Size(292, 144);
             this.Controls.Add(this.txtContraseña2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtContraseña);
@@ -126,6 +129,7 @@
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.btnRegistrarse);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmRegistrarse";
             this.Text = "Registrarse";
             this.Load += new System.EventHandler(this.frmRegistrarse_Load);
