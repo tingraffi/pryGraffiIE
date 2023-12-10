@@ -25,7 +25,7 @@ namespace pryEspinosaIE
         {
             estadoConexion = false;
             cadenaConexion = "Provider=Microsoft.ACE.OLEDB.12.0;" + "Data Source="
-                + rutaProyecto.FullName + "\\basedeusuarios.accdb";
+                + rutaProyecto.FullName + "\\Archivos\\basedeusuarios.accdb";
         }
         public void ConectarBaseDatos()
         {

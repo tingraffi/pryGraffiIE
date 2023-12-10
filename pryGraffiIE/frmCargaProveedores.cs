@@ -47,7 +47,7 @@ namespace pryGraffiIE
 
             rutaArchivo = informacionCarpetas.FullName;
 
-            rutaArchivo += "\\basedatos\\Listado de aseguradores.csv";
+            rutaArchivo += "\\Archivos\\Listado de aseguradores.csv";
 
             objetoLectorArchivo = new StreamReader(rutaArchivo);
 
@@ -102,7 +102,7 @@ namespace pryGraffiIE
 
             rutaArchivo = informacionCarpetas.FullName;
 
-            rutaArchivo += "\\basedatos\\Listado de aseguradores.csv";
+            rutaArchivo += "\\Archivos\\Listado de aseguradores.csv";
 
             objetoEscribeArchivo = new StreamWriter(rutaArchivo, true);
 

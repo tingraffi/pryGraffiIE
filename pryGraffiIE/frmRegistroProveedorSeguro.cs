@@ -120,7 +120,7 @@ namespace pryGraffiIE
         {
             DirectoryInfo info = new DirectoryInfo(@"../..");
 
-            string ruta = info.FullName + "\\Proveedores";
+            string ruta = info.FullName + "\\Archivos\\Proveedores";
 
             CargarTreeView(ruta, info.Name);
         }
